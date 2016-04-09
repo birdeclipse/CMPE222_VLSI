@@ -1,75 +1,75 @@
 magic
 tech scmos
-timestamp 1460174587
+timestamp 1460241041
 << nwell >>
-rect -25 13 13 38
+rect -25 13 13 47
 << pwell >>
-rect -25 -17 13 7
+rect -25 -18 13 10
 << ntransistor >>
 rect -11 -4 -9 0
 rect -3 -4 -1 0
 << ptransistor >>
-rect -11 20 -9 24
-rect -3 20 -1 24
+rect -11 31 -9 35
+rect -3 31 -1 35
 << ndiffusion >>
 rect -12 -4 -11 0
 rect -9 -4 -3 0
-rect -1 -4 1 0
+rect -1 -4 0 0
 << pdiffusion >>
-rect -12 20 -11 24
-rect -9 20 -8 24
-rect -4 20 -3 24
-rect -1 20 0 24
+rect -12 31 -11 35
+rect -9 31 -8 35
+rect -4 31 -3 35
+rect -1 31 0 35
 << ndcontact >>
 rect -16 -4 -12 0
-rect 1 -4 5 0
+rect 0 -4 4 0
 << pdcontact >>
-rect -16 20 -12 24
-rect -8 20 -4 24
-rect 0 20 4 24
+rect -16 31 -12 35
+rect -8 31 -4 35
+rect 0 31 4 35
 << psubstratepcontact >>
-rect -17 -12 -13 -8
+rect -16 -12 -12 -8
 << nsubstratencontact >>
-rect -17 28 -13 32
-rect 1 28 5 32
+rect -16 39 -12 43
+rect 0 39 4 43
 << polysilicon >>
-rect -11 24 -9 26
-rect -3 24 -1 26
-rect -11 15 -9 20
-rect -15 11 -9 15
-rect -11 0 -9 11
-rect -3 15 -1 20
-rect -3 11 2 15
-rect -3 0 -1 11
+rect -11 35 -9 37
+rect -3 35 -1 37
+rect -11 26 -9 31
+rect -15 22 -9 26
+rect -11 0 -9 22
+rect -3 0 -1 31
 rect -11 -6 -9 -4
 rect -3 -6 -1 -4
 << polycontact >>
-rect -19 11 -15 15
-rect 2 11 6 15
-rect 5 3 9 7
+rect -19 22 -15 26
+rect -1 13 3 17
+rect 4 3 8 7
 << metal1 >>
-rect -19 32 7 33
-rect -19 28 -17 32
-rect -13 28 1 32
-rect 5 28 7 32
-rect -19 27 7 28
-rect -16 24 -12 27
-rect 0 24 4 27
-rect -8 7 -4 20
-rect -8 3 5 7
-rect 1 0 5 3
+rect -19 43 7 44
+rect -19 39 -16 43
+rect -12 39 0 43
+rect 4 39 7 43
+rect -19 38 7 39
+rect -16 35 -12 38
+rect 0 35 4 38
+rect -8 7 -4 31
+rect -8 3 4 7
+rect 0 0 4 3
 rect -16 -7 -12 -4
 rect -19 -8 7 -7
-rect -19 -12 -17 -8
-rect -13 -12 7 -8
+rect -19 -12 -16 -8
+rect -12 -12 7 -8
 rect -19 -13 7 -12
 << metal2 >>
-rect -22 11 -15 15
-rect 2 11 9 15
-rect 5 3 12 7
+rect -19 22 -15 26
+rect -1 13 3 17
+rect 4 3 8 7
 << labels >>
-rlabel metal2 4 13 4 13 1 B_IN
-rlabel metal2 -17 13 -17 13 1 A_IN
-rlabel nsubstratencontact -15 30 -15 30 1 VDD+
-rlabel psubstratepcontact -15 -10 -15 -10 1 GND
+rlabel metal2 -17 24 -17 24 1 A_IN
+rlabel nsubstratencontact -14 41 -14 41 1 +VDD
+rlabel nsubstratencontact 2 41 2 41 1 +VDD
+rlabel psubstratepcontact -14 -10 -14 -10 1 GND
+rlabel metal2 6 5 6 5 1 OUT
+rlabel metal2 1 15 1 15 1 B_IN
 << end >>

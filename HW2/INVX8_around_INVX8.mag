@@ -1,0 +1,40 @@
+magic
+tech scmos
+timestamp 1460238728
+use INVX8  INVX8_3
+timestamp 1460237164
+transform 1 0 -15 0 -1 77
+box -28 -40 10 25
+use INVX8  INVX8_1
+timestamp 1460237164
+transform 1 0 4 0 -1 77
+box -28 -40 10 25
+use INVX8  INVX8_2
+timestamp 1460237164
+transform 1 0 23 0 -1 77
+box -28 -40 10 25
+use INVX8  INVX8_5
+timestamp 1460237164
+transform 1 0 -15 0 1 39
+box -28 -40 10 25
+use INVX8  INVX8_0
+timestamp 1460237164
+transform 1 0 4 0 1 39
+box -28 -40 10 25
+use INVX8  INVX8_4
+timestamp 1460237164
+transform 1 0 23 0 1 39
+box -28 -40 10 25
+use INVX8  INVX8_6
+timestamp 1460237164
+transform 1 0 -15 0 -1 -25
+box -28 -40 10 25
+use INVX8  INVX8_7
+timestamp 1460237164
+transform 1 0 4 0 -1 -25
+box -28 -40 10 25
+use INVX8  INVX8_8
+timestamp 1460237164
+transform 1 0 23 0 -1 -25
+box -28 -40 10 25
+<< end >>
