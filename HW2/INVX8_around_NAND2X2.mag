@@ -1,40 +1,40 @@
 magic
 tech scmos
-timestamp 1460444665
+timestamp 1460491896
 use NAND2X2  NAND2X2_4
-timestamp 1460443965
+timestamp 1460491727
 transform 1 0 -26 0 -1 84
-box -25 -18 13 47
+box -25 -36 13 47
 use NAND2X2  NAND2X2_0
-timestamp 1460443965
+timestamp 1460491727
 transform 1 0 2 0 -1 84
-box -25 -18 13 47
+box -25 -36 13 47
 use NAND2X2  NAND2X2_1
-timestamp 1460443965
+timestamp 1460491727
 transform 1 0 30 0 -1 84
-box -25 -18 13 47
+box -25 -36 13 47
 use NAND2X2  NAND2X2_3
-timestamp 1460443965
+timestamp 1460491727
 transform 1 0 -26 0 1 2
-box -25 -18 13 47
+box -25 -36 13 47
 use INVX8  INVX8_0
-timestamp 1460443535
+timestamp 1460491589
 transform 1 0 5 0 1 24
-box -28 -40 10 25
+box -28 -58 10 25
 use NAND2X2  NAND2X2_2
-timestamp 1460443965
+timestamp 1460491727
 transform 1 0 30 0 1 2
-box -25 -18 13 47
+box -25 -36 13 47
 use NAND2X2  NAND2X2_5
-timestamp 1460443965
-transform 1 0 -26 0 -1 -24
-box -25 -18 13 47
+timestamp 1460491727
+transform 1 0 -26 0 -1 -60
+box -25 -36 13 47
 use NAND2X2  NAND2X2_7
-timestamp 1460443965
-transform 1 0 2 0 -1 -24
-box -25 -18 13 47
+timestamp 1460491727
+transform 1 0 2 0 -1 -60
+box -25 -36 13 47
 use NAND2X2  NAND2X2_6
-timestamp 1460443965
-transform 1 0 30 0 -1 -24
-box -25 -18 13 47
+timestamp 1460491727
+transform 1 0 30 0 -1 -60
+box -25 -36 13 47
 << end >>
