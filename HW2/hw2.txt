@@ -1,0 +1,11 @@
+INVX8 cell_height: 78 lambda
+INVX8 cell_width: 30 lambda
+
+NAND2X2 cell_height: 78 lambda
+NAND2X2 cell_width: 30 lambda
+
+12 metal2 track cell height = 12 * (3+3) = 72 lambda = 21.6um
+
+use measure to check the height between two center of the power rails;
+
+
