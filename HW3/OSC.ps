@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
 %%Title: OSC.ps
 %%Creator: XCircuit v3.9 rev47
-%%CreationDate: Sat Apr 30 14:49:17 2016
+%%CreationDate: Sat Apr 30 18:32:42 2016
 %%Pages: 2
 %%BoundingBox: 0 0 612 792
 %%DocumentNeededResources: font Helvetica Times-Roman Times-RomanISO 
@@ -190,8 +190,8 @@
 
 %%BeginSetup
 
-/digital::_invert {
-% _invert is_schematic
+/digital::invert {
+% invert is_schematic
 begingate
 0 1.000 -32 -40 -32 40 40 0 3 polygon
 1 1.000 48 0 8 0.000 360.000 xcarc
@@ -293,16 +293,20 @@ endgate
 
 %%EndSetup
 
-%%Page: _invert 1
+%%Page: invert 1
 %%PageOrientation: Portrait
 %%PageBoundingBox: 0 0 612 792
 /pgsave save def bop
-% digital::_invert is_symbol
+% digital::invert is_symbol
 1.0000 inchscale
 2.6000 setlinewidth 1949 671 translate
 
-1.000 0.000 -1088 480 <</@width (3u) >> analoglib3::pMOS
-1.000 0.000 -1088 288 <</@width (1u) >> analoglib3::nMOS
+1.000 0.000 -1088 480 <</p_jst 28 /@index (2) /@model (pfet) /@length (0.6u) 
+/@width (12u) /@class (M) /@fingers (1) /p_rot 0 /p_xps 16 /p_yps 16 /p_xps1 16 
+/p_yps1 -8 /p_xps2 16 /p_yps2 48 /@subs (vdd) >> analoglib3::pMOS
+1.000 0.000 -1088 288 <</p_jst 28 /@index (1) /@model (nfet) /@length (0.6u) 
+/@class (M) /@fingers (1) /p_rot 0 /p_xps 16 /p_yps 40 /p_xps1 16 /p_yps1 8 
+/p_xps2 16 /p_yps2 -16 /@subs (gnd) /@width (4u) >> analoglib3::nMOS
 1 1.000 -1088 416 -1088 352 -1088 368 3 polygon
 1.000 0.000 -1088 544 analog::vdd
 1.000 0.000 -1088 224 analog::gnd
@@ -323,52 +327,21 @@ pgsave restore showpage
 %%PageBoundingBox: 0 0 612 792
 /pgsave save def bop
 1.0000 inchscale
-2.6000 setlinewidth 559 -164 translate
+2.6000 setlinewidth -1049 -1020 translate
 
-1.000 0.000 -768 1296 digital::_invert
-1.000 0.000 -656 1296 digital::_invert
-1.000 0.000 -544 1296 digital::_invert
-1.000 0.000 -432 1296 digital::_invert
-1.000 0.000 -320 1296 digital::_invert
-1.000 0.000 -208 1296 digital::_invert
-1.000 0.000 -96 1296 digital::_invert
-1.000 0.000 16 1296 digital::_invert
-1.000 0.000 128 1296 digital::_invert
-1.000 0.000 240 1296 digital::_invert
-1.000 0.000 352 1296 digital::_invert
-1.000 0.000 464 1296 digital::_invert
-1.000 0.000 576 1296 digital::_invert
-1.000 0.000 688 1296 digital::_invert
-1.000 0.000 800 1296 digital::_invert
-1.000 0.000 912 1296 digital::_invert
-1.000 0.000 1024 1296 digital::_invert
-1.000 0.000 1136 1296 digital::_invert
-1.000 0.000 -768 1168 digital::_invert
-1.000 0.000 -656 1168 digital::_invert
-1.000 0.000 -544 1168 digital::_invert
-1.000 0.000 -432 1168 digital::_invert
-1.000 0.000 -320 1168 digital::_invert
-1.000 0.000 -208 1168 digital::_invert
-1.000 0.000 -96 1168 digital::_invert
-1.000 0.000 16 1168 digital::_invert
-1.000 0.000 128 1168 digital::_invert
-1.000 0.000 240 1168 digital::_invert
-1.000 0.000 352 1168 digital::_invert
-1.000 0.000 464 1168 digital::_invert
-1.000 0.000 576 1168 digital::_invert
-1.000 0.000 688 1168 digital::_invert
-1.000 0.000 800 1168 digital::_invert
-1.000 0.000 912 1168 digital::_invert
-1.000 0.000 1024 1168 digital::_invert
-1.000 0.000 1136 1168 digital::_invert
-1 1.000 -816 1168 -816 1232 1232 1232 1232 1296 1200 1296 5 polygon
-1.000 0.000 1312 1072 generic::circle
+1.000 0.000 2256 2048 generic::circle
 1.000 0.000 0.000 scb
-(Z) {/Helvetica cf} 2 16 0.000 1.000 1328 1072 pinlabel
+(Z) {/Helvetica cf} 2 16 0.000 1.000 2272 2048 pinlabel
 sce
-1.000 0.000 1248 1072 digital::_invert
-1 1.000 1200 1168 1200 1072 2 polygon
-1 1.000 1312 1072 1312 1392 -848 1408 -848 1296 -816 1296 5 polygon
+1 1.000 1424 2048 1424 2144 2240 2144 2240 2048 2256 2048 5 polygon
+1 1.000 2208 2048 2240 2048 2 polygon
+1.000 0.000 1472 2048 digital::invert
+1.000 0.000 1584 2048 digital::invert
+1.000 0.000 1696 2048 digital::invert
+1.000 0.000 1808 2048 digital::invert
+1.000 0.000 1920 2048 digital::invert
+1.000 0.000 2032 2048 digital::invert
+1.000 0.000 2144 2048 digital::invert
 pgsave restore showpage
 
 %%Trailer
