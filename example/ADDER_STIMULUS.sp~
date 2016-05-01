@@ -1,0 +1,33 @@
+* 4 bit full adder Stimulus analysis and Measurement
+
+* include the MOSFET models
+.include 'ami05.sp'
+
+* my supplies are global to the hierarchy
+.global vdd gnd
+.param supply_voltage=3.3V
+*set the operating temperature
+.param temp=20
+
+* include the source file
+.include 'ADDER.spc'
+
+* capacitive load on all the output
+C1 SUM0 0 25f
+C2 SUM1 0 25f
+C3 SUM2 0 25f
+C4 SUM3 0 25f
+C5 COUT 0 25f
+
+* define the supply coltages
+VDD vdd 0 supply_voltage
+
+
+
+
+V1 A0 0 PWL(0us 0V 1us 0V 1.3us 2V 2us 2.5V 3us 0.5V 3.4us 0.5V)
+
+* perform a 250ps transient analysis
+.tran 1ps 1000ps
+
+.END

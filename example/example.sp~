@@ -1,0 +1,43 @@
+* Example Inverter with Transient Analysis and Measure
+
+* include the MOSFET models
+.include 'ami05.sp'
+
+* our supplies are global to the hierarchy
+.global vdd gnd
+.param supply_voltage=3.3V
+* set the operating temperature
+.option temp=20
+
+* include the circuit to be simulated
+.include 'INVX1.spc'
+
+* capacitive load on inverter output
+C1 Z 0 25f
+
+* perform a VTC analysis of the inverter
+* sweep VSW from 0 to 5V with step size of 0.1V
+.DC VSW 0 3.3 0.1
+
+* perform a 250ps transient analysis
+.tran 4ps 4000ps
+
+* define the supply voltages
+VDD vdd 0 supply_voltage
+*VSS gnd 0 0V
+
+* create a voltage pulse on the input
+VSW A 0 PULSE (0V supply_voltage 100ps 5ps 5ps 400p 800ps)
+
+.param half_supply = '0.5*supply_voltage'
+.param slew_low = '0.1*supply_voltage'
+.param slew_high = '0.9*supply_voltage'
+
+* measure the input rise to output fall delay
+* uses a calculation to compute half of 50% of the supply voltage
+.meas tran rise_delay trig v(A) val=half_supply rise=1 targ v(Z) val=half_supply fall=1
+* measure the output rise time (slew)
+.meas tran rise_time trig v(Z) val=slew_low rise=1 targ v(Z) val=slew_high rise=1
+
+.END
+

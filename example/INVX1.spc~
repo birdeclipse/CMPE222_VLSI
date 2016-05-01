@@ -1,0 +1,8 @@
+* INVX1
+
+M1 Z A GND gnd nfet w=2u l=0.6u m=1
+M2 Z A Vdd vdd pfet W=4u L=0.6u M=1
+
+.end
+
+
