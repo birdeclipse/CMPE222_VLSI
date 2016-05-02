@@ -61,7 +61,7 @@ c4 COUT 0 20f
 .meas tran carry_chain_worst_fall_delay trig v(CIN) val=half_supply fall=1 targ v(COUT) val=half_supply fall=1
 
 
-.PRINT PTOTAL=PAR('3.3*I(VDD)')
+.PRINT POWER=PAR('3.3*I(VDD)')
 
 
 

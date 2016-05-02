@@ -1,4 +1,4 @@
-*SPICE circuit <FULL_ADDER> from XCircuit v3.9 rev 47
+*SPICE circuit <ADDER> from XCircuit v3.9 rev 47
 
 .subckt FULL_ADDER CO SO A B C
 M1 CO C! A*B gnd nfet w=3u l=0.6u m=1
@@ -30,5 +30,10 @@ MQ B! B Vdd vdd pfet W=6u L=0.6u M=1
 MR A! A GND gnd nfet w=3u l=0.6u m=1
 MS A! A Vdd vdd pfet W=6u L=0.6u M=1
 .ends
+
+X1 COUT SUM3 A3 B3 int17 FULL_ADDER
+X2 int17 SUM2 A2 B2 int15 FULL_ADDER
+X3 int15 SUM1 A1 B1 int16 FULL_ADDER
+X4 int16 SUM0 A0 B0 CIN FULL_ADDER
 
 .end

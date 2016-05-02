@@ -1,7 +1,7 @@
 * Example Inverter with Transient Analysis and Measure
 
 .include 'ami05.sp'		;include the MOSFET models
-.option temp=100	   		;set the operating temperature
+.option temp=20		   	;set the operating temperature
 .include 'OSC.spc' 		;include the circuit to be simulated
 
 * our supplies are global to the hierarchy
@@ -11,7 +11,6 @@
 
 Cload Z 0 10f 			; capacitive load on inverter output
 
-*;VDD vdd 0 supply_voltage 	; define the supply voltages
 VDD vdd 0  EXP (1 5 2000NS 500NS 10us 2000NS)
 
 

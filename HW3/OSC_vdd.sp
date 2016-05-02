@@ -1,7 +1,7 @@
 * Example Inverter with Transient Analysis and Measure
 
 .include 'ami05.sp'		;include the MOSFET models
-.option temp=100	   		;set the operating temperature
+.option temp=20		   	;set the operating temperature
 .include 'OSC.spc' 		;include the circuit to be simulated
 
 * our supplies are global to the hierarchy
@@ -25,15 +25,19 @@ GND gnd 0 0 			; define the gndq
 
 .measure tran tdiff_1V TRIG v(Z) VAL=1*0.9 RISE=15 TARG v(Z) VAL=1*0.9 RISE=16;
 
+.measure tran tdiff_1_5V TRIG v(Z) VAL=1.5*0.9 RISE=15 TARG v(Z) VAL=1.5*0.9 RISE=16;
 
 .measure tran tdiff_2V TRIG v(Z) VAL=2*0.9 RISE=15 TARG v(Z) VAL=2*0.9 RISE=16;
 
+.measure tran tdiff_2_5V TRIG v(Z) VAL=2.5*0.9 RISE=15 TARG v(Z) VAL=2.5*0.9 RISE=16;
 
 .measure tran tdiff_3V TRIG v(Z) VAL=3*0.9 RISE=15 TARG v(Z) VAL=3*0.9 RISE=16;
 
+.measure tran tdiff_3_5V TRIG v(Z) VAL=3.5*0.9 RISE=15 TARG v(Z) VAL=3.5*0.9 RISE=16;
 
 .measure tran tdiff_4V TRIG v(Z) VAL=4*0.9 RISE=15 TARG v(Z) VAL=4*0.9 RISE=16;
 
+.measure tran tdiff_4_5V TRIG v(Z) VAL=4.5*0.9 RISE=15 TARG v(Z) VAL=4.5*0.9 RISE=16;
 
 .measure tran tdiff_5V TRIG v(Z) VAL=5*0.9 RISE=30 TARG v(Z) VAL=5*0.9 RISE=31;
 

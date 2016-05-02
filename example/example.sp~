@@ -20,7 +20,7 @@ C1 Z 0 25f
 .DC VSW 0 3.3 0.1
 
 * perform a 250ps transient analysis
-.tran 4ps 4000ps
+.tran 1ps 4000ps
 
 * define the supply voltages
 VDD vdd 0 supply_voltage
@@ -38,6 +38,8 @@ VSW A 0 PULSE (0V supply_voltage 100ps 5ps 5ps 400p 800ps)
 .meas tran rise_delay trig v(A) val=half_supply rise=1 targ v(Z) val=half_supply fall=1
 * measure the output rise time (slew)
 .meas tran rise_time trig v(Z) val=slew_low rise=1 targ v(Z) val=slew_high rise=1
+
+
 
 .END
 
