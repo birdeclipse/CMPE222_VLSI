@@ -18,9 +18,7 @@ GND gnd 0 0 			; define the gndq
 
 .dc TEMP 0 100 0.1		; perform temperture sweep
 
-
 .tran 1ns 5000ns 2000ns		; perform a 200ns transient analysis
-
 
 
 .measure tran tdiff_1V TRIG v(Z) VAL=1*0.9 RISE=15 TARG v(Z) VAL=1*0.9 RISE=16;

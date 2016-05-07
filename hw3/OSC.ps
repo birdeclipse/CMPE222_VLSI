@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
 %%Title: OSC.ps
 %%Creator: XCircuit v3.9 rev47
-%%CreationDate: Sat Apr 30 18:32:42 2016
+%%CreationDate: Fri May  6 21:35:08 2016
 %%Pages: 2
 %%BoundingBox: 0 0 612 792
 %%DocumentNeededResources: font Helvetica Times-Roman Times-RomanISO 
@@ -243,7 +243,8 @@ endgate
 (D) {/Times-Roman cf} 2 9 0.000 1.000 0 64 pinlabel
 0.180 0.545 0.341 scb
 mark @fingers ( m=) @length ( l=) @width ( w=) @model ( ) @subs ( %pD %pG %pS ) 
-@index @class (spice:) {/Times-Roman cf} ctmk 4 0.000 1.000 -244 -139 infolabel
+@index @class (spice:) {/Times-Roman cf} ctmk 4 360.000 1.000 -244 -139 
+infolabel
 mark ( %x %y) @width ( ) @length (sim:n %pG %pD %pS ) {/Times-Roman cf} ctmk 4 
 0.000 1.000 -244 -187 infolabel
 0.647 0.165 0.165 scb
@@ -301,12 +302,8 @@ endgate
 1.0000 inchscale
 2.6000 setlinewidth 1949 671 translate
 
-1.000 0.000 -1088 480 <</p_jst 28 /@index (2) /@model (pfet) /@length (0.6u) 
-/@width (12u) /@class (M) /@fingers (1) /p_rot 0 /p_xps 16 /p_yps 16 /p_xps1 16 
-/p_yps1 -8 /p_xps2 16 /p_yps2 48 /@subs (vdd) >> analoglib3::pMOS
-1.000 0.000 -1088 288 <</p_jst 28 /@index (1) /@model (nfet) /@length (0.6u) 
-/@class (M) /@fingers (1) /p_rot 0 /p_xps 16 /p_yps 40 /p_xps1 16 /p_yps1 8 
-/p_xps2 16 /p_yps2 -16 /@subs (gnd) /@width (4u) >> analoglib3::nMOS
+1.000 0.000 -1088 480 <</@index (2) /@width (12.6u) >> analoglib3::pMOS
+1.000 0.000 -1088 288 <</@index (1) /@width (4.2u) >> analoglib3::nMOS
 1 1.000 -1088 416 -1088 352 -1088 368 3 polygon
 1.000 0.000 -1088 544 analog::vdd
 1.000 0.000 -1088 224 analog::gnd
@@ -319,7 +316,6 @@ endgate
 1.000 0.000 0.000 scb
 (A) {/Helvetica cf} 2 16 0.000 1.000 -1280 384 pinlabel
 (Z) {/Helvetica cf} 2 16 0.000 1.000 -1024 384 pinlabel
-sce
 pgsave restore showpage
 
 %%Page: OSC 2

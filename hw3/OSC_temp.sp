@@ -16,8 +16,6 @@ VDD vdd 0 3.3
 
 GND gnd 0 0 			; define the gndq
 
-.dc TEMP 0 100 0.1		; perform temperture sweep
-
 .tran 1ns 5000ns 2000ns		; perform a 200ns transient analysis
 
 
